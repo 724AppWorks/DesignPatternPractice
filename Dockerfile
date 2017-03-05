@@ -1,5 +1,5 @@
 FROM java:8u111-jdk
-COPY target/*.war /usr/src/myapp/app.war
+COPY target/*.jar /usr/src/myapp/app.jar
 WORKDIR /usr/src/myapp
 EXPOSE 8000
-CMD ["java", "-jar", "app.war"]
+CMD ["java", "-jar", "app.jar"]
