@@ -1,0 +1,4 @@
+app:
+  image: "app/dpp:0.1"
+  ports:
+    - "8000:8000"
