@@ -23,6 +23,6 @@ public class DppApplication extends SpringBootServletInitializer {
 
   @RequestMapping(value = "/", method = RequestMethod.GET)
   public String index(){
-    return "Hello SpringBoot";
+    return "Hello Dpp";
   }
 }
