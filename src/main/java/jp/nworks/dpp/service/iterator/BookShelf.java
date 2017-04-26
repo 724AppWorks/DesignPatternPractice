@@ -1,4 +1,4 @@
-package jp.nworks.dpp.iterator;
+package jp.nworks.dpp.service.iterator;
 
 public class BookShelf implements Aggregate {
   private Book[] books;

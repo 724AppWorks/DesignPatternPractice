@@ -1,4 +1,4 @@
-package jp.nworks.dpp.iterator;
+package jp.nworks.dpp.service.iterator;
 
 public interface Iterator {
   boolean hasNext();

@@ -1,7 +1,17 @@
-package jp.nworks.dpp.iterator;
+package jp.nworks.dpp.controller;
 
-public class IteratorMain {
+import jp.nworks.dpp.service.iterator.Book;
+import jp.nworks.dpp.service.iterator.BookShelf;
+import jp.nworks.dpp.service.iterator.Iterator;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+@RequestMapping(value = "/iterator")
+public class IteratorController {
+
+  @RequestMapping(value = "", method = RequestMethod.GET)
   public String index() {
     String result = "";
     BookShelf bookShelf = new BookShelf(4);

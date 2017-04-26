@@ -1,6 +1,5 @@
 package jp.nworks.dpp;
 
-import jp.nworks.dpp.iterator.IteratorMain;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -22,14 +21,9 @@ public class DppApplication extends SpringBootServletInitializer {
     return builder.sources(DppApplication.class);
   }
 
-  @RequestMapping(value = "/", method = RequestMethod.GET)
+  @RequestMapping(value = "", method = RequestMethod.GET)
   public String index() {
     return "Hello Dpp";
-  }
-
-  @RequestMapping(value = "/iterator", method = RequestMethod.GET)
-  public String iterator() {
-    return new IteratorMain().index();
   }
 
 }
