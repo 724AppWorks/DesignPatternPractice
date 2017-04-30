@@ -1,17 +1,19 @@
 package jp.nworks.dpp.service.adapter;
 
-public class PrintBanner extends Banner implements Print {
+public class PrintBanner extends Print {
+    private Banner banner;
+
     public PrintBanner(String string) {
-        super(string);
+        this.banner = new Banner(string);
     }
 
     @Override
     public String printWeek() {
-        return showWithParen();
+        return banner.showWithParen();
     }
 
     @Override
     public String pringString() {
-        return showWithAster();
+        return banner.showWithAster();
     }
 }
