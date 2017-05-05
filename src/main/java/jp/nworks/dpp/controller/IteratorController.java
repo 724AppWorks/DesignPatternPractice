@@ -15,7 +15,7 @@ public class IteratorController {
   public String index() {
     String result = "";
     BookShelf bookShelf = new BookShelf(4);
-    bookShelf.appendBook(new Book("Arround"));
+    bookShelf.appendBook(new Book("Around"));
     bookShelf.appendBook(new Book("Bible"));
     bookShelf.appendBook(new Book("Cinderella"));
     bookShelf.appendBook(new Book("Daddy"));
